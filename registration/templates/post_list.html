@@ -1,0 +1,20 @@
+<!-- post_list.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post List</title>
+</head>
+<body>
+    <h1>Post List</h1>
+    {% for post in posts %}
+        <div style="display: flex; flex-direction: row;">
+            <p>{{ post.text }}</p>
+            <!-- <img src="{{ post.image.url }}" alt="Post Image" height="240px" width="340px"> -->
+            <!-- <img src="{{post.image.url}}" alt="" height="220px" width="320px"   > -->
+            <img src="{{ post.image.url }}" alt="Post Image" height="220px" width="320px">
+        </div>
+    {% endfor %}    
+</body>
+</html>
